@@ -2,50 +2,56 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
   font-family: sans-serif;
   background-color: rgb(17, 52, 116);
   color: rgb(106, 160, 182);
+  align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.cont {
+
+.conte {
   width: 90%;
   max-width: 1000px;
   margin: 40px auto 100px auto;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
 
-.cont, .movie {
+.conte, .movie {
   text-align: center;
 }
 
-.cont .movie .title {
+.conte, .movie, .title {
   font-size: 16px;
   font-weight: 600;
 }
 
-.cont .movie, .post {
+.conte, .movie, .poster {
   width: 100%;
   margin-bottom: 10px;
 }
 
 .npage {
-  position: fixed;
-  bottom: 0;
-  background: black;
-  width: 100%;
   display: flex;
-  justify-content: center;
+  bottom: 0;
+  background-color: rgb(17, 52, 116);
+  min-width: 100%;
   gap: 20px;
   padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.npage, button {
+button {
   cursor: pointer;
   border: none;
   display: flex;
@@ -56,4 +62,15 @@ body {
   width: 200px;
   font-weight: 600;
   transition: .3s ease all;
+  background-color: rgb(178, 196, 211);
+}
+
+button:hover {
+  background-color: rgb(116, 137, 155);
+}
+
+.currentpage{
+  align-items: center;
+  min-width: 100%;
+  text-align: center;
 }
